@@ -65,7 +65,7 @@ export function Codegen({state, page, setPage} : {
         data = renderer({components: state}, undefined, importCallback);
         language = libs[libSelected]?.language || 'json';
     } else {
-        data = JSON.stringify(state, undefined, 4)
+        data = JSON.stringify(state, undefined, 2)
     }
 
     const [copied, setCopied] = useState(false);

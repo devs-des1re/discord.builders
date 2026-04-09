@@ -23,6 +23,6 @@ import { <%- [...mapBuilderClasses(data.components)].join(", ") %> } from 'disco
 
 const components = [
 <% data.components.forEach(function(comp){ -%>
-    <%_ %><%- indent(include('/discordjs-js/components.js.ejs', {comp: comp}), 8); %>,
+    <%_ %><%- indent(include('/discordjs-js/components.js.ejs', {comp: comp}), 2); %>,
 <% }); -%>
 ];
