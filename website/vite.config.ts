@@ -17,12 +17,12 @@ export default defineConfig(({command, mode}) => ({
         jsxInject: `import React from 'react'`
     },
     resolve: (command === 'serve' && mode === 'development') ? {
-        // Make library auto-reload only on yarn dev
         alias: [
-            // .* is to not double import css files
             {find: /^components-sdk.*$/, replacement: resolve(__dirname, '../components-sdk/src')},
         ],
-    } : undefined,
+    } : {
+        preserveSymlinks: true,
+    },
     css: {
         postcss: {
             plugins: [
