@@ -1,5 +1,5 @@
 {
-  "buildCommand": "yarn build && yarn workspace website build",
+  "buildCommand": "yarn workspace components-sdk build && yarn workspace website build",
   "outputDirectory": "website/dist",
   "headers": [
     {
