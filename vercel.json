@@ -1,6 +1,6 @@
 {
-  "buildCommand": "yarn run build",
-  "outputDirectory": "dist",
+  "buildCommand": "yarn build && yarn workspace website build",
+  "outputDirectory": "website/dist",
   "headers": [
     {
       "source": "/(.*).html",
