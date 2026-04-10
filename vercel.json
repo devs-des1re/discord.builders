@@ -1,0 +1,4 @@
+{
+  "buildCommand": "yarn workspace website build",
+  "outputDirectory": "website/dist"
+}
